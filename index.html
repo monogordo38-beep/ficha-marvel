@@ -27,8 +27,8 @@
   .scratch{position:absolute;top:120px;left:50%;width:2px;height:60px;background:linear-gradient(180deg,transparent,#8b0000 40%,#c0392b 70%,transparent);transform:rotate(-15deg);z-index:4;opacity:0.7;}
   .scratch2{top:140px;left:52%;height:40px;transform:rotate(10deg);opacity:0.5;}
   .hero-text{position:absolute;bottom:0;left:0;right:0;z-index:5;padding:20px 36px 32px;}
-  .tag-line{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:4px;color:#1a1aff;text-transform:uppercase;margin-bottom:8px;}
-  .char-name{font-family:'Oswald',sans-serif;font-size:62px;font-weight:700;line-height:0.9;color:#e8e8e8;text-transform:uppercase;letter-spacing:-1px;}
+  .tag-line{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:4px;color:#1a1aff;text-transform:uppercase;margin-bottom:8px;margin-top:8px}
+  .char-name{font-family:'Oswald',sans-serif;font-size:57px;font-weight:700;line-height:0.9;color:#e8e8e8;text-transform:uppercase;letter-spacing:-1px;}
   .char-name span{display:block;color:#2a2aff;font-size:40px;letter-spacing:6px;}
   .char-subtitle{margin-top:10px;font-size:10px;color:#5a5a5a;letter-spacing:5px;text-transform:uppercase;border-left:2px solid #8b0000;padding-left:10px;}
   .divider{height:1px;background:linear-gradient(90deg,#8b0000,#1a1aff 40%,transparent);margin:0 36px;position:relative;z-index:5;}
@@ -73,6 +73,7 @@
   .trait-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:6px;font-size:10px;color:#8a8a8a;font-family:'Barlow Condensed',sans-serif;font-weight:300;}
   .trait-dot-pos{width:6px;height:6px;border-radius:50%;background:#2a6a2a;flex-shrink:0;margin-top:3px;}
   .trait-dot-neg{width:6px;height:6px;border-radius:50%;background:#8b0000;flex-shrink:0;margin-top:3px;}
+  .trait-dot-neut{width:6px;height:6px;border-radius:50%;background:#f4ae17;flex-shrink:0;margin-top:3px;}
 
   /* DIVISAS */
   .currency-block{margin-bottom:26px;}
@@ -145,9 +146,9 @@
     <div class="scratch"></div>
     <div class="scratch scratch2"></div>
     <div class="hero-text">
+      <div class="char-name">EPHRAIM WINSLOW<span>BULLSEYE</span></div> 
       <div class="tag-line">&#9632; ARAKIEL &nbsp;&#9632;&nbsp; 17/06/2026</div>
-      <div class="char-name">EPHRAIM WINSLOW<span>BULLSEYE</span></div>
-      <div class="char-subtitle">Expediente únicamente visual &nbsp;/&nbsp; Ficha real arriba</div>
+      <div class="char-subtitle">Expediente únicamente visual &nbsp;/&nbsp; Ficha real debajo (Spoiler)</div>
     </div>
   </div>
 
@@ -162,22 +163,21 @@
 
     <!-- PERFIL -->
     <div class="data-block">
-      <div class="sec-label">// Perfil</div>
-      <div class="data-row"><span class="data-key">Nombre real</span><span class="data-val">Ephraim Winslow</span></div>
-      <div class="data-row"><span class="data-key">Alias</span><span class="data-val blue">Bullseye</span></div>
-      <div class="data-row"><span class="data-key">Afiliación</span><span class="data-val">Babel Corp</span></div>
-      <div class="data-row"><span class="data-key">Rango</span><span class="data-val red">I</span></div>
-      <div class="data-row"><span class="data-key">Estado</span><span class="data-val">Vivo</span></div>
+      <div class="sec-label">// Perfil usuario</div>
+      <div class="data-row"><span class="data-key">Nombre jugador</span><span class="data-val">Arakiel</span></div>
+      <div class="data-row"><span class="data-key">Fecha de unión</span><span class="data-val blue">17/06/2026</span></div>
+      <div class="data-row"><span class="data-key">Enlace a historia</span><span class="data-val">-</span></div>
+      <div class="data-row"><span class="data-key">Afiliación</span><span class="data-val red">Babel Corp</span></div>
     </div>
 
     <!-- FÍSICO -->
     <div class="data-block">
-      <div class="sec-label">// Físico</div>
-      <div class="data-row"><span class="data-key">Altura</span><span class="data-val">186 cm</span></div>
-      <div class="data-row"><span class="data-key">Peso</span><span class="data-val">88 kg</span></div>
-      <div class="data-row"><span class="data-key">Ojos</span><span class="data-val">Pardos</span></div>
-      <div class="data-row"><span class="data-key">Cabello</span><span class="data-val">Marrón</span></div>
-      <div class="data-row"><span class="data-key">Complexión</span><span class="data-val">Atlética</span></div>
+      <div class="sec-label">// Perfil personaje</div>
+      <div class="data-row"><span class="data-key">Nombre</span><span class="data-val">Ephraim Winslow</span></div>
+      <div class="data-row"><span class="data-key">Origen</span><span class="data-val">Estados Unidos</span></div>
+      <div class="data-row"><span class="data-key">Edad</span><span class="data-val">31</span></div>
+      <div class="data-row"><span class="data-key">Estado civil</span><span class="data-val">Soltero</span></div>
+      <div class="data-row"><span class="data-key">Ocupación</span><span class="data-val">¡Secreto!</span></div>
     </div>
 
     <div class="accent-h"></div>
@@ -195,7 +195,7 @@
           </div>
         </div>
         <div style="height:1px;background:#1a1a1a;margin-top:2px;">
-          <div style="height:1px;width:45%;background:linear-gradient(90deg,#8b0000,#c0392b);"></div>
+          <div style="height:1px;width:20%;background:linear-gradient(90deg,#8b0000,#ff2a2a);"></div>
         </div>
       </div>
 
@@ -208,7 +208,7 @@
           </div>
         </div>
         <div style="height:1px;background:#1a1a1a;margin-top:2px;">
-          <div style="height:1px;width:40%;background:linear-gradient(90deg,#8b0000,#c0392b);"></div>
+          <div style="height:1px;width:20%;background:linear-gradient(90deg,#8b0000,#ff2a2a);"></div>
         </div>
       </div>
 
@@ -221,7 +221,7 @@
           </div>
         </div>
         <div style="height:1px;background:#1a1a1a;margin-top:2px;">
-          <div style="height:1px;width:50%;background:linear-gradient(90deg,#8b0000,#c0392b);"></div>
+          <div style="height:1px;width:20%;background:linear-gradient(90deg,#8b0000,#ff2a2a);"></div>
         </div>
       </div>
 
@@ -234,7 +234,7 @@
           </div>
         </div>
         <div style="height:1px;background:#1a1a1a;margin-top:2px;">
-          <div style="height:1px;width:48%;background:linear-gradient(90deg,#8b0000,#c0392b);"></div>
+          <div style="height:1px;width:20%;background:linear-gradient(90deg,#8b0000,#ff2a2a);"></div>
         </div>
       </div>
 
@@ -247,7 +247,7 @@
           </div>
         </div>
         <div style="height:1px;background:#1a1a1a;margin-top:2px;">
-          <div style="height:1px;width:60%;background:linear-gradient(90deg,#1a5a1a,#2a8a2a);"></div>
+          <div style="height:1px;width:20%;background:linear-gradient(90deg,#8b0000,#ff2a2a);"></div>
         </div>
       </div>
 
@@ -260,7 +260,7 @@
           </div>
         </div>
         <div style="height:1px;background:#1a1a1a;margin-top:2px;">
-          <div style="height:1px;width:100%;background:linear-gradient(90deg,#8b0000,#ff2a2a);"></div>
+          <div style="height:1px;width:20%;background:linear-gradient(90deg,#8b0000,#ff2a2a);"></div>
         </div>
       </div>
 
@@ -273,7 +273,7 @@
           </div>
         </div>
         <div style="height:1px;background:#1a1a1a;margin-top:2px;">
-          <div style="height:1px;width:100%;background:linear-gradient(90deg,#8b0000,#ff2a2a);"></div>
+          <div style="height:1px;width:20%;background:linear-gradient(90deg,#8b0000,#ff2a2a);"></div>
         </div>
       </div>
     </div>
@@ -282,7 +282,7 @@
 
     <!-- HABILIDADES: LISTADO SIMPLE -->
     <div class="powers-block">
-      <div class="sec-label">// Metahumano: Superpuntería</div>
+      <div class="sec-label">// Habilidades</div>
       <ul class="power-list">
         <li>Habilidad</li>
         <li>Habilidad</li>
@@ -299,17 +299,17 @@
     <div class="traits-block">
       <div class="sec-label">// Rasgos</div>
       <div style="font-size:8px;color:#3a3a3a;letter-spacing:2px;margin-bottom:6px;">POSITIVOS</div>
-      <div class="trait-item"><div class="trait-dot-pos"></div><span>[Rasgo positivo 1]</span></div>
-      <div class="trait-item"><div class="trait-dot-pos"></div><span>[Rasgo positivo 2]</span></div>
-      <div class="trait-item"><div class="trait-dot-pos"></div><span>[Rasgo positivo 3]</span></div>
+      <div class="trait-item"><div class="trait-dot-pos"></div><span>[Puntería] - [2]</span></div>
+      <div class="trait-item"><div class="trait-dot-pos"></div><span>[Encaprichado: Carnage] - [1]</span></div>
+      <div class="trait-item"><div class="trait-dot-pos"></div><span>[Especulador] - [4]</span></div>
+      <div class="trait-item"><div class="trait-dot-pos"></div><span>[Atlético] - [2]</span></div>
       <div style="font-size:8px;color:#3a3a3a;letter-spacing:2px;margin:10px 0 6px;">NEGATIVOS</div>
-      <div class="trait-item"><div class="trait-dot-neg"></div><span>[Rasgo negativo 1]</span></div>
-      <div class="trait-item"><div class="trait-dot-neg"></div><span>[Rasgo negativo 2]</span></div>
-      <div class="trait-item"><div class="trait-dot-neg"></div><span>[Rasgo negativo 3]</span></div>
+      <div class="trait-item"><div class="trait-dot-neg"></div><span>[Demente] - [2]</span></div>
+      <div class="trait-item"><div class="trait-dot-neg"></div><span>[Renegado] - [1]</span></div>
       <div style="font-size:8px;color:#3a3a3a;letter-spacing:2px;margin:10px 0 6px;">NEUTROS</div>
-      <div class="trait-item"><div class="trait-dot-neg"></div><span>[Rasgo neutro 1]</span></div>
-      <div class="trait-item"><div class="trait-dot-neg"></div><span>[Rasgo neutro 2]</span></div>
-      <div class="trait-item"><div class="trait-dot-neg"></div><span>[Rasgo neutro 3]</span></div>
+      <div class="trait-item"><div class="trait-dot-neut"></div><span>[Asexual]</span></div>
+      <div class="trait-item"><div class="trait-dot-neut"></div><span>[Cruel]</span></div>
+      <div class="trait-item"><div class="trait-dot-neut"></div><span>[Rencoroso]</span></div>
     </div>
 
     <div class="accent-h"></div>
