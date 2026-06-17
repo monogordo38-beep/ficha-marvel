@@ -26,10 +26,10 @@
   .crosshair::after{width:100%;height:1px;top:50%;left:0;}
   .scratch{position:absolute;top:120px;left:50%;width:2px;height:60px;background:linear-gradient(180deg,transparent,#8b0000 40%,#c0392b 70%,transparent);transform:rotate(-15deg);z-index:4;opacity:0.7;}
   .scratch2{top:140px;left:52%;height:40px;transform:rotate(10deg);opacity:0.5;}
-  .hero-text{position:absolute;bottom:0;left:0;right:0;z-index:5;padding:20px 36px 32px;}
+  .hero-text{position:absolute;bottom:-10px;left:0;right:0;z-index:5;padding:20px 36px 32px;}
   .tag-line{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:4px;color:#1a1aff;text-transform:uppercase;margin-bottom:8px;margin-top:8px}
-  .char-name{font-family:'Oswald',sans-serif;font-size:57px;font-weight:700;line-height:0.9;color:#e8e8e8;text-transform:uppercase;letter-spacing:-1px;}
-  .char-name span{display:block;color:#2a2aff;font-size:40px;letter-spacing:6px;}
+  .char-name{font-family:'Oswald',sans-serif;font-size:45px;font-weight:700;line-height:0.9;color:#e8e8e8;text-transform:uppercase;letter-spacing:-1px;}
+  .char-name span{display:block;color:#2a2aff;font-size:30px;letter-spacing:6px;}
   .char-subtitle{margin-top:10px;font-size:10px;color:#5a5a5a;letter-spacing:5px;text-transform:uppercase;border-left:2px solid #8b0000;padding-left:10px;}
   .divider{height:1px;background:linear-gradient(90deg,#8b0000,#1a1aff 40%,transparent);margin:0 36px;position:relative;z-index:5;}
 
@@ -76,9 +76,9 @@
   .trait-dot-neut{width:6px;height:6px;border-radius:50%;background:#f4ae17;flex-shrink:0;margin-top:3px;}
 
   /* DIVISAS */
-  .currency-block{margin-bottom:26px;}
-  .currency-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;}
-  .currency-item{background:#111;border:1px solid #1f1f1f;padding:10px 8px;text-align:center;}
+  .currency-block{margin-bottom:26px;grid-column:1/-1;}
+  .currency-grid{display:flex;gap:8px;justify-content:center;}
+  .currency-item{background:#111;border:1px solid #1f1f1f;padding:10px 8px;text-align:center;width:160px;flex-shrink:0;}
   .currency-icon{font-size:18px;display:block;margin-bottom:4px;}
   .currency-name{font-size:8px;color:#4a4a4a;letter-spacing:3px;text-transform:uppercase;display:block;margin-bottom:6px;}
   .currency-amount{font-size:20px;color:#c8c8c8;font-family:'Oswald',sans-serif;display:block;}
@@ -98,6 +98,8 @@
   .xp-table td{font-size:10px;color:#8a8a8a;padding:5px 6px;border-bottom:1px solid #111;font-family:'Barlow Condensed',sans-serif;}
   .xp-table td:last-child{color:#c8c8c8;text-align:right;}
 
+
+  
   /* ALINEAMIENTO */
   .align-block{grid-column:1/-1;margin-bottom:26px;}
   .align-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:10px;}
@@ -165,10 +167,10 @@
     <div class="data-block">
       <div class="sec-label">// Perfil usuario</div>
       <div class="data-row"><span class="data-key">Nombre jugador</span><span class="data-val">Arakiel</span></div>
-      <div class="data-row"><span class="data-key">Fecha de unión</span><span class="data-val blue">17/06/2026</span></div>
+      <div class="data-row"><span class="data-key">Fecha de unión</span>17/06/2026</div>
       <div class="data-row"><span class="data-key">Enlace a historia</span><span class="data-val">-</span></div>
-      <div class="data-row"><span class="data-key">Afiliación</span><span class="data-val red">Babel Corp</span></div>
-      <div class="data-row"><span class="data-key">Poder</span><span class="data-val red">Metahumano: Superpuntería</span></div>
+      <div class="data-row"><span class="data-key">Afiliación</span><span class="data-val red">Babel Corp</span> y <span style="color:#2a8a2a;">Doom Academy</span></div>
+      <div class="data-row"><span class="data-key">Poder</span><span style="color:#1a1aff;">Metahumano: Superpuntería</span></div>
     </div>
 
     <!-- FÍSICO -->
@@ -302,11 +304,12 @@
       <div style="font-size:8px;color:#3a3a3a;letter-spacing:2px;margin-bottom:6px;">POSITIVOS</div>
       <div class="trait-item"><div class="trait-dot-pos"></div><span>[Puntería] - [2]</span></div>
       <div class="trait-item"><div class="trait-dot-pos"></div><span>[Encaprichado: Carnage] - [1]</span></div>
-      <div class="trait-item"><div class="trait-dot-pos"></div><span>[Especulador] - [4]</span></div>
+      <div class="trait-item"><div class="trait-dot-pos"></div><span>[Polifacético] - [3]</span></div>
+      <div class="trait-item"><div class="trait-dot-pos"></div><span>[Traidor] - [3]</span></div>
       <div class="trait-item"><div class="trait-dot-pos"></div><span>[Atlético] - [2]</span></div>
       <div style="font-size:8px;color:#3a3a3a;letter-spacing:2px;margin:10px 0 6px;">NEGATIVOS</div>
       <div class="trait-item"><div class="trait-dot-neg"></div><span>[Demente] - [2]</span></div>
-      <div class="trait-item"><div class="trait-dot-neg"></div><span>[Renegado] - [1]</span></div>
+      <div class="trait-item"><div class="trait-dot-neg"></div><span>[Maldito] - [3]</span></div>
       <div style="font-size:8px;color:#3a3a3a;letter-spacing:2px;margin:10px 0 6px;">NEUTROS</div>
       <div class="trait-item"><div class="trait-dot-neut"></div><span>[Asexual]</span></div>
       <div class="trait-item"><div class="trait-dot-neut"></div><span>[Cruel]</span></div>
@@ -369,6 +372,27 @@
         </div>
       </div>
     </div> <!-- Cierre del xp-block -->
+
+<div class="accent-h"></div>
+
+<div class="full" style="margin-bottom:26px;">
+  <div class="sec-label">// Inventario</div>
+  <table class="xp-table">
+    <thead>
+      <tr>
+        <th>Objeto</th>
+        <th>Tipo</th>
+        <th>Cantidad</th>
+        <th>Notas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+    </tbody>
+  </table>
+</div>
 
     <div class="accent-h"></div>
 
